@@ -1,0 +1,38 @@
+﻿<div data-ng-controller="AddEmployeeController">
+
+    <div class="form-horizontal">
+        <h4> Add New Employee</h4>
+        <hr />
+        <div class="form-group">
+            <label class="col-md-2 control-label">Firstname Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Firstname" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Lastname Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Lastname" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Salary</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Salary" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Department</label>
+            <div class="col-md-10">
+                <select data-ng-model="DepartmentId" data-ng-options="d.Id as d.DepartmentName for d in Departments" class="form-control">
+                <option value="">Select Department</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input class="btn btn-default" type="button" value="Save" data-ng-click="save()" />
+            </div>
+        </div>
+    </div>
+</div>

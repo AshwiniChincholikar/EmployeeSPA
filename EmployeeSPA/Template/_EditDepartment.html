@@ -1,0 +1,21 @@
+﻿<div data-ng-controller="EditDepartmentController">
+    <div class="form-horizontal">
+        <h4> Edit Department</h4>
+        <hr />
+        <div class="form-group">
+            <label class="col-md-2 control-label">Department Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Department.DepartmentName" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input class="btn btn-default" type="button" value="Save" ng-click="save()" />
+                <br />
+                <div>{{error}}</div>
+            </div>
+        </div>
+    </div>
+
+   
+</div>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+<div data-ng-app="MyApp">
+    <ul>
+        <li> <a href="#/Home/home">Home</a></li>
+        <li> <a href="#/Home/about">About</a></li>
+        
+        <li> <a href="#/Home/invalid">Invalid Url</a></li>
+    </ul>
+    <div>
+        <ng-view></ng-view>
+    </div>
+</div>
+@section Scripts{
+<script src="~/Scripts/app/Routing.js"></script>
+}

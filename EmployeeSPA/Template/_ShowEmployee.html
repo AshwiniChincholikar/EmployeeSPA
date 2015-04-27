@@ -1,0 +1,24 @@
+﻿<div ng-controller="ShowEmployeeController">
+    <br />
+    
+    <a href="#!addemployee"> Add New Employee </a>
+    <br /><br />
+    <table class="table">
+        <tr>
+            <th>Employee Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Action</th>
+        </tr>
+
+        <tr data-ng-repeat="item in Employees">
+            <td>{{item.Firstname}} {{item.Lastname}}</td>
+            <td>{{item.Salary}}</td>
+            <td>{{item.Department.DepartmentName}}</td>
+            <td>
+                <a ng-click="editEmployee(item.Id)">Edit</a> |
+                <a ng-click="deleteEmployee(item.Id)">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>
